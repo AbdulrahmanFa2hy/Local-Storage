@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #eee;
+}
+.color-control {
+  width: 40%;
+  height: 150px;
+  background-color: #ddd;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  margin: 20px;
+} 
+.color-control span {
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+  opacity: 0.4;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+span.active,
+span:hover {
+  opacity: 1;
+}
+.color-control span:first-child {
+  background-color: red;
+}
+.color-control span:nth-child(2) {
+  background-color: green;
+}
+.color-control span:nth-child(3) {
+  background-color: blue;
+}
+.color-control span:nth-child(4) {
+  background-color: black;
+}
+.local-color {
+  width: 60%;
+  height: 300px;
+  margin: 20px;
+  background-color: red;
+}
